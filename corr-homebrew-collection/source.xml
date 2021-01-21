@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1">
+			<file name="source.xml" url="https://github.com/CorrTerek/mike-homebrew-collection/raw/main/source.xml" />
+		</update>
+	</info>
+	<element name="Star Wars 5e" type="Source" source="Core" id="ID_SOURCE_SW5E">
+		<description>
+			<![CDATA[<p>5th Edition rules for the Star Wars setting.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">SW5E</set>
+			<set name="url">https://sw5e.com/</set>
+			<set name="author" abbreviation="UN" url="https://sw5e.com/">Unknown</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+	<element name="Corr's Homebrew Collection" type="Source" source="Core" id="ID_SOURCE_CHOMEBREW">
+		<description>
+			<![CDATA[<p>A collection of homebrew curated by me.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">MHBC</set>
+			<set name="url">https://drive.google.com/drive/folders/1ab95tGh-z2ebr8JtfkIto_0a7PXzRjBw</set>
+			<set name="CorrTerek" abbreviation="CT" url="https://drive.google.com/drive/folders/1ab95tGh-z2ebr8JtfkIto_0a7PXzRjBw">Unknown</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>

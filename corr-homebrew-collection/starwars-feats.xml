@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.2">
+            <file name="starwars-feats.xml" url="https://github.com/CorrTerek/mike-homebrew-collection/raw/main/starwars-feats.xml" />
+        </update>
+    </info>
+
+	<element name="Specialist" type="Feat" source="Star Wars 5e" id="ID_SW5E_FEAT_SPECIALIST">
+		<description>
+			<p>You have focused training with a specific tool. Select one type of specialist’s tools. You gain the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You gain proficiency with the chosen tools.</li>
+				<li>Choose one of your tool proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency.</li>
+                <li>You can attempt ability checks with the chosen kit without the kit present, but you have disadvantage on the check when you do so.</li>
+                <li>Whenever you make an ability check with the chosen kit and you don’t have disadvantage on the check, you can treat a d20 roll of 9 or lower as a 10, as long as you spend at least 1 minute on the check.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your proficiency bonus is doubled for any ability check you make that uses your Specialist proficiency.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase, Specialist" supports="Feat" />
+			<select type="Proficiency" name="Proficiency, Specialist" supports="Tool" />
+			<!-- for now, expertise for ease of use todo: future rework -->
+			<select type="Class Feature" name="Expertise, Specialist" supports="Expertise, Tool" />
+		</rules>
+	</element>
+	<element name="Ace Pilot" type="Feat" source="Star Wars 5e" id="ID_SW5E_FEAT_ACE_PILOT">
+		<description>
+			<p>You’re quite experienced both on land and in the air, be it from time in a navy, as a mercenary, or perhaps even piracy. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Dexterity score by 1, to a maximum of 20</li>
+				<li>You gain proficiency in Piloting. If you are already proficient in Piloting, you add double your proficiency bonus to checks you make with it.</li>
+				<li>Whenever you make an Intelligence (Investigation) or Wisdom (Perception) check related to vehicles or ships, you are considered to have expertise in the Investigation or Perception skill.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your proficiency bonus is doubled for any ability check you make that uses your Piloting proficiency.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+			<select type="Proficiency" name="Proficiency (Ace Pilot)" supports="ID_SW5E_TOOL_PROFICIENCY_PILOTING" />
+			<!-- for now, expertise for ease of use todo: future rework -->
+			<select type="Class Feature" name="Expertise (Ace Pilot)" supports="Expertise, ID_SW5E_TOOL_PROFICIENCY_PILOTING" />
+		</rules>
+	</element>
+
+
+</elements>

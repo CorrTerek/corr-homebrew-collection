@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.2">
+            <file name="starwars-tools.xml" url="https://github.com/CorrTerek/mike-homebrew-collection/raw/main/starwars-tools.xml" />
+        </update>
+    </info>
+
+	<element name="Armormech’s Tools" type="Item" source="Star Wars 5e" id="ID_SW5E_ITEM_TOOL_ARMORMECH_TOOLS">
+		<description>
+			<p>Armormech’s tools are for crafting and repairing armor and shields.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">20</set>
+			<set name="weight" lb="8">8 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_SW5E_TOOL_PROFICIENCY_ARMORMECH_TOOLS</set>
+		</setters>
+	</element>
+	<element name="Armstech’s Tools" type="Item" source="Star Wars 5e" id="ID_SW5E_ITEM_TOOL_ARMSTECH_TOOLS">
+		<description>
+			<p>Armstech’s tools are for crafting and repairing blasters and vibroweapons.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="9">9 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_SW5E_TOOL_PROFICIENCY_ARMSTECH_TOOLS</set>
+		</setters>
+	</element>
+	<element name="Artificer’s Tools" type="Item" source="Star Wars 5e" id="ID_SW5E_ITEM_TOOL_ARTIFICER_TOOLS">
+		<description>
+			<p>Artificer’s tools are for creating lightweapons.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">20</set>
+			<set name="weight" lb="8">8 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_SW5E_TOOL_PROFICIENCY_ARTIFICER_TOOLS</set>
+		</setters>
+	</element>
+	<element name="Droidtech’s Tools" type="Item" source="Star Wars 5e" id="ID_SW5E_ITEM_TOOL_DROIDTECH_TOOLS">
+		<description>
+			<p>Droidtech’s tools are for crafting and modifying droids.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">40</set>
+			<set name="weight" lb="12">12 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_SW5E_TOOL_PROFICIENCY_DROIDTECH_TOOLS</set>
+		</setters>
+	</element>
+	<element name="Biotech’s Tools" type="Item" source="Star Wars 5e" id="ID_SW5E_ITEM_TOOL_BIOTECH_TOOLS">
+		<description>
+			<p>Biotech’s tools are used to create cybernetic augmentations.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">45</set>
+			<set name="weight" lb="6">6 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_SW5E_TOOL_PROFICIENCY_BIOTECH_TOOLS</set>
+		</setters>
+	</element>
+	<element name="Gadgeteer's Tools" type="Item" source="Star Wars 5e" id="ID_SW5E_ITEM_TOOL_GADGETEER_TOOLS">
+		<description>
+			<p>Gadgeteer’s tools are used for crafting many types of adventuring gear, such as jet packs or friction-grip gear.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">35</set>
+			<set name="weight" lb="7">7 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_SW5E_TOOL_PROFICIENCY_GADGETEER_TOOLS</set>
+		</setters>
+	</element>
+	<element name="Demolitions Kit" type="Item" source="Star Wars 5e" id="ID_SW5E_ITEM_TOOL_DEMOLITION_KIT">
+		<description>
+			<p>Demolitions kits are used to create, enhance, and disarm explosives.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">40</set>
+			<set name="weight" lb="4">4 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_SW5E_TOOL_PROFICIENCY_DEMOLITION_KIT</set>
+		</setters>
+	</element>
+	<element name="Mechanic's Kit" type="Item" source="Star Wars 5e" id="ID_SW5E_ITEM_TOOL_MECHANICS_KIT">
+		<description>
+			<p>Mechanic’s kits are used to craft and repair vehicles and starships.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">65</set>
+			<set name="weight" lb="25">25 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_SW5E_TOOL_PROFICIENCY_MECHANICS_KIT</set>
+		</setters>
+	</element>
+	<element name="Security Kit" type="Item" source="Star Wars 5e" id="ID_SW5E_ITEM_TOOL_SECURITY_KIT">
+		<description>
+			<p>Security kits are used to bypass physical locks.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">65</set>
+			<set name="weight" lb="3">3 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_SW5E_TOOL_PROFICIENCY_SECURITY_KIT</set>
+		</setters>
+	</element>
+	<element name="Slicer's Kit" type="Item" source="Star Wars 5e" id="ID_SW5E_ITEM_TOOL_SLICERS_KIT">
+		<description>
+			<p>Slicer’s kits can bypass computerized defenses and locks.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">80</set>
+			<set name="weight" lb="6">6 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_SW5E_TOOL_PROFICIENCY_SLICERS_KIT</set>
+		</setters>
+	</element>
+	<element name="Piloting" type="Item" source="Star Wars 5e" id="ID_SW5E_ITEM_PILOTING">
+		<description>
+			<p>Your Dexterity (Piloting) check measures your ability to control vehicles, aircraft, and spaceships. Piloting governs your ability to maneuver through tight spaces and debris fields or dogfight with enemy craft.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_SW5E_TOOL_PROFICIENCY_PILOTING</set>
+		</setters>
+	</element>
+
+    <!-- proficiencies -->
+    <element name="Tool Proficiency (Armormech's)" type="Proficiency" source="Star Wars 5e" id="ID_SW5E_TOOL_PROFICIENCY_ARMORMECH_TOOLS">
+	<supports>Tool</supports>
+	</element>
+	<element name="Tool Proficiency (Armstech's)" type="Proficiency" source="Star Wars 5e" id="ID_SW5E_TOOL_PROFICIENCY_ARMSTECH_TOOLS">
+	<supports>Tool</supports>
+	</element>
+	<element name="Tool Proficiency (Artificer's)" type="Proficiency" source="Star Wars 5e" id="ID_SW5E_TOOL_PROFICIENCY_ARTIFICER_TOOLS">
+	<supports>Tool</supports>
+	</element>
+	<element name="Tool Proficiency (Droidtech's)" type="Proficiency" source="Star Wars 5e" id="ID_SW5E_TOOL_PROFICIENCY_DROIDTECH_TOOLS">
+	<supports>Tool</supports>
+	</element>
+	<element name="Tool Proficiency (Biotech's)" type="Proficiency" source="Star Wars 5e" id="ID_SW5E_TOOL_PROFICIENCY_BIOTECH_TOOLS">
+	<supports>Tool</supports>
+	</element>
+	<element name="Tool Proficiency (Gadgeteer's)" type="Proficiency" source="Star Wars 5e" id="ID_SW5E_TOOL_PROFICIENCY_GADGETEER_TOOLS">
+	<supports>Tool</supports>
+	</element>
+    <element name="Tool Proficiency (Demolition Kit)" type="Proficiency" source="Star Wars 5e" id="ID_SW5E_TOOL_PROFICIENCY_DEMOLITION_KIT">
+	<supports>Tool</supports>
+	</element>
+    <element name="Tool Proficiency (Security Kit)" type="Proficiency" source="Star Wars 5e" id="ID_SW5E_TOOL_PROFICIENCY_SECURITY_KIT">
+	<supports>Tool</supports>
+	</element>
+    <element name="Tool Proficiency (Slicer's Kit)" type="Proficiency" source="Star Wars 5e" id="ID_SW5E_TOOL_PROFICIENCY_SLICERS_KIT">
+	<supports>Tool</supports>
+	</element>
+	<element name="Tool Proficiency (Mechanic's Kit)" type="Proficiency" source="Star Wars 5e" id="ID_SW5E_TOOL_PROFICIENCY_MECHANICS_KIT">
+	<supports>Tool</supports>
+	</element>
+	<element name="Tool Proficiency (Piloting)" type="Proficiency" source="Star Wars 5e" id="ID_SW5E_TOOL_PROFICIENCY_PILOTING">
+	<supports>Tool</supports>
+	</element>
+
+</elements>

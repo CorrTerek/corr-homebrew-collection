@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Star Wars Items</name>
+        <update version="0.0.2">
+            <file name="starwars-items-armor.xml" url="https://github.com/CorrTerek/mike-homebrew-collection/raw/main/starwars-items-armor.xml" />
+        </update>
+    </info>
+
+    <!-- light armor -->
+ 	<element name="Combat Suit" type="Armor" source="Star Wars 5e" id="ID_SW5E_ARMOR_LIGHT_COMBAT">
+		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p>Combat suits are seen all over the galaxy, and can be found for sale by almost any merchant who dealt in weapons and armor. Many such suits are used by military organizations, such as the Galactic Republic’s military, as well as by mercenaries, criminals, bounty hunters and even some Jedi.
+
+			The suit itself offers decent protection from most types of attacks while maintaining maximum flexibility and minimum weight. However this armor is only recommended for light skirmishes.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Light</set>
+			<set name="armorClass">11 + Dex modifier</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_COMBATSUIT</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="11" />
+		</rules>
+	</element>
+	<element name="Fiber Armor" type="Armor" source="Star Wars 5e" id="ID_SW5E_ARMOR_LIGHT_FIBER">
+		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p>Fiber armor is a type of armor that offers more protection than the lighter combat suit. Fiber armor is heavier overall than combat suits, and not quite as flexible, but many consider the trade-offs worthwhile. It is a good source of defense from physical attacks and light blaster fire.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">45</set>
+			<set name="weight" lb="13">13 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Light</set>
+			<set name="armorClass">12 + Dex modifier</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_FIBER</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="12" />
+		</rules>
+	</element>
+
+	<!-- medium armor -->
+	<element name="Mesh Armor" type="Armor" source="Star Wars 5e" id="ID_SW5E_ARMOR_MEDIUM_MESH">
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description>
+			<p>Providing solid protection for a minimal cost, mesh armor is considered excellent protection for entrenched troops or guards. However, this protection comes at a cost of mobility, limiting its uses by rapidly advancing infantry. Still, it provides more mobility than battle armor.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="20">20 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Medium</set>
+			<set name="armorClass">13 + Dex modifier (max 2)</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_MESH</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="13" />
+		</rules>
+	</element>
+	<element name="Weave Armor" type="Armor" source="Star Wars 5e" id="ID_SW5E_ARMOR_MEDIUM_WEAVE">
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description>
+			<p>Weave armor was constructed from a mesh of metal or composite plates and a padded jumpsuit. Variants of the armor included less plates and more padding for a lighter, though less protect-ive armor, and heavier plating with molded pieces to fit the wearer. Though the armor was available unmodified, most users personalized their armor.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="25">25 lb.</set>
+			<set name="armor">Medium</set>
+			<set name="slot">body</set>
+			<set name="armorClass">14 + Dex modifier (max 2)</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_WEAVE</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="14" />
+		</rules>
+	</element>
+	<element name="Composite Armor" type="Armor" source="Star Wars 5e" id="ID_SW5E_ARMOR_MEDIUM_COMPOSITE">
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description>
+			<p>Composite armor is a type of armored suit that offers a good balance of mobility and protection against most types of weapons. The micro-hydraulics of this type of powered armor provide the operator with protection, but are more bulky than mesh or weave armors. This type of armor is rarely seen outside of professional mercenaries’ and soldiers’ use.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="40">45 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Medium</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="armorClass">15 + Dex modifier (max 2)</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_COMPOSITE</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="15" />
+		</rules>
+	</element>
+
+	<!-- heavy armor -->
+	<element name="Battle Armor" type="Armor" source="Star Wars 5e" id="ID_SW5E_ARMOR_HEAVY_BATTLE">
+		<supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+		<description>
+			<p>Battle armor is an armor that reduced weight, but restricts movement. The armor is commonly used by mercenaries, bounty hunters, soldiers, and civilians that live in dangerous areas.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="weight" lb="55">55 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Heavy</set>
+			<set name="strength">13</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="armorClass">16</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_BATTLE</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="16" />
+			<stat name="speed" value="-10" bonus="armor" requirements="![str:13]" />
+		</rules>
+	</element>
+	<element name="Assault Armor" type="Armor" source="Star Wars 5e" id="ID_WOTC_ARMOR_HEAVY_ASSAULT">
+		<supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+		<description>
+			<p>Assault armor improved on battle armor, with the benefit of micro-hydraulics that boost the efficacy of the operator. It offers better protection, but increased weight.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="weight" lb="60">60 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Heavy</set>
+			<set name="strength">15</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="armorClass">17</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_ASSAULT</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="17" />
+			<stat name="speed" value="-10" bonus="armor" requirements="![str:15]" />
+		</rules>
+	</element>
+		<element name="Heavy Exoskeleton" type="Armor" source="Star Wars 5e" id="ID_SW5E_ARMOR_HEAVY_EXOSKEL">
+		<supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+		<description>
+			<p>Heavy exoskeletons are virtually the heaviest armor acquirable during the Galactic War. It is ideal for extreme combat situations that involved direct damage and also offers a very good level of protection in sacrifice of dexterity. Some consider it claustrophobic but that was the trade-off for safety.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">900</set>
+			<set name="weight" lb="65">65 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Heavy</set>
+			<set name="strength">17</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="armorClass">18</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_EXOSKEL</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="18" />
+			<stat name="speed" value="-10" bonus="armor" requirements="![str:17]" />
+		</rules>
+	</element>
+</elements>

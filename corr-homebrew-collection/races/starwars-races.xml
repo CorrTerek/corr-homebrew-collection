@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.2">
+            <file name="starwars-races.xml" url="https://github.com/CorrTerek/mike-homebrew-collection/raw/main/starwars-races.xml" />
+        </update>
+    </info>
+
+	<element name="Cathar" type="Race" source="Star Wars 5e" id="ID_SW5E_RACE_CATHAR">
+		<description>
+			<h4>Biology and Appearance</h4>
+			<p>The Cathar have fur-covered bodies with thick manes as well as prominent, retractable claws that can deliver powerful killing attacks on foes and prey. Their bodies also possess rapid healing abilities. These traits make them the perfect hand-to-hand specialists.</p>
+			<p class="indent">The Cathar species also has two subspecies, known as the Juhani and the Myr Rho. Both of these are notably less catlike than mainline Cathar. Cathar are born into a litter. The Cathar species is biologically similar to the Bothan species.</p>
+			<h4>Society and Culture</h4>
+			<p>On their homeworld, Cathar live in cities built into giant trees, and are organized into clans governed by elders. Stories of their great heroes were often carved into the trunks of these tree-homes for following generations to see. The Cathar mate for life, to the extent that when one mate dies, the survivor never has a relationship with another. Cathar clan society includes great pageants and celebrations, especially for their heroes. Their religion includes a ritual known as the “Blood Hunt,” in which Cathar warriors individually engaged in combat against entire nests of Kiltik in order to gain honor and purge themselves of inner darkness. The native language of the Cathar is Catharese, which included the emphasis of some spoken words with a growl.</p>
+			<h4>Cathar Names</h4>
+			<p>Cathar names can sound both melodic and fairly gutteral, but they almost always sound strong and fierce. Female names are typically longer than male names.</p>
+			<p class="indent">Surnames are usually one syllable.</p>
+			<h4>Cathar Traits</h4>
+			<p>Your Cathar character has the following racial traits.</p>
+			<p>
+			<span class="feature">Ability Score Increase.</span>Your Dexterity score increases by 2, and your Charisma score increases by 1.<br/>
+			<span class="feature">Age.</span>Cathar have lifespans equivalent to humans. Alignment. Cathar tend toward chaotic alignments, as they let impulse and fancy guide their decisions. They are rarely evil, with most of them driven by curiosity rather than greed or other dark impulses.<br/>
+			<span class="feature">Size.</span>Cathar are taller on average than humans and relatively slender. Your size is Medium.<br/>
+			<span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
+			<span class="feature">Darkvision.</span>You have a cat’s keen senses, especially in the dark. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.<br/>
+			<span class="feature">Feline Agility.</span>Your reflexes and agility allow you to move with a burst of speed. When you move on your tum in combat, you can double your speed until the end of the tum. Once you use this trait, you can’t use it again until you move 0 feet on one of your turns.<br/>
+			<span class="feature">Cat’s Claws.</span>Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.<br/>
+			<span class="feature">Cat’s Talent.</span>You have proficiency in the Perception and Stealth skills.<br/>
+			<span class="feature">Languages.</span>You can speak, read, and write Common and one other language of your choice.<br/>
+			</p>
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="names" type="male">Crurbirr, Isyrr, Nynorr, Suro, Tukarr</set>
+            <set name="names" type="female">Cuwin, Jyvohr, Mulahr, Solyri</set>
+			<set name="names" type="surnames">Jin, Ki, Mak, Rhir, Ta</set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d12">4’8"</set>
+			<set name="weight" modifier="2d4">100 lb.</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="2"/>
+			<stat name="charisma" value="1"/>
+			<stat name="innate speed" value="30" bonus="base"/>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Language" id="ID_LANGUAGE_CATHARESE" />
+			<grant type="Racial Trait" id="ID_SW5E_RACIAL_TRAIT_CATHAR_LEONINE_AGILITY" />
+			<grant type="Racial Trait" id="ID_SW5E_RACIAL_TRAIT_CATHAR_CATS_CLAWS" />
+			<grant type="Racial Trait" id="ID_SW5E_RACIAL_TRAIT_CATHAR_CATS_TALENT" />
+		</rules>
+	</element>
+	<element name="Leonine Agility" type="Racial Trait" source="Star Wars 5e" id="ID_SW5E_RACIAL_TRAIT_CATHAR_LEONINE_AGILITY">
+		<description>
+			<p>Your reflexes and agility allow you to move with a burst of speed. When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can’t use it again until you move 0 feet on one of your turns.</p>
+		</description>
+		<sheet>
+			<description>When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can’t use it again until you move 0 feet on one of your turns.</description>
+		</sheet>
+	</element>
+	<element name="Cat’s Claws" type="Racial Trait" source="Star Wars 5e" id="ID_SW5E_RACIAL_TRAIT_CATHAR_CATS_CLAWS">
+		<description>
+			<p>Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4+{{strength:modifier}}, instead of the bludgeoning damage normal for an unarmed strike.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:climb" value="20" bonus="base" />
+		</rules>
+	</element>
+	<element name="Cat’s Talent" type="Racial Trait" source="Star Wars 5e" id="ID_SW5E_RACIAL_TRAIT_CATHAR_CATS_TALENT">
+		<description>
+			<p>You have proficiency in the Perception and Stealth skills.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency in the Perception and Stealth skills.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+		</rules>
+	</element>  
+</elements>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.2">
+            <file name="starwars-languages.xml" url="https://github.com/CorrTerek/mike-homebrew-collection/raw/main/starwars-languages.xml" />
+        </update>
+    </info>
+
+	<element name="Huttese" type="Language" source="Star Wars 5e" id="ID_LANGUAGE_HUTTESE">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by Hutts.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Hutts</set>
+			<set name="script">Huttese</set>
+		</setters>
+	</element>
+	<element name="Sith" type="Language" source="Star Wars 5e" id="ID_LANGUAGE_SITH">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by Hutts.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Sith</set>
+			<set name="script">Sith</set>
+		</setters>
+	</element>
+	<element name="Jawaese" type="Language" source="Star Wars 5e" id="ID_LANGUAGE_JAWAESE">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by Jawas.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Jawas</set>
+			<set name="script">Aurabesh</set>
+		</setters>
+	</element>
+	<element name="Catharese" type="Language" source="Star Wars 5e" id="ID_LANGUAGE_CATHARESE">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by Cathar.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Cathar</set>
+			<set name="script">Aurabesh</set>
+		</setters>
+	</element>
+	<element name="Mando'a" type="Language" source="Star Wars 5e" id="ID_LANGUAGE_MANDOA">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by Mandalorians.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Mandalorians</set>
+			<set name="script">Mando'a</set>
+		</setters>
+	</element>
+</elements>
