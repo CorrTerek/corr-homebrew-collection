@@ -3,7 +3,7 @@
     <info>
         <name></name>
         <update version="0.0.2">
-            <file name="starwars-backgrounds.xml" url="https://github.com/CorrTerek/mike-homebrew-collection/raw/main/starwars-backgrounds.xml" />
+            <file name="starwars-backgrounds.xml" url="https://github.com/CorrTerek/corr-homebrew-collection/raw/main/corr-homebrew-collection/backgrounds/starwars-backgrounds.xml" />
         </update>
     </info>
 

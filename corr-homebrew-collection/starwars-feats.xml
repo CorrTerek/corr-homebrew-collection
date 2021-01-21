@@ -3,7 +3,7 @@
     <info>
         <name></name>
         <update version="0.0.2">
-            <file name="starwars-feats.xml" url="https://github.com/CorrTerek/mike-homebrew-collection/raw/main/starwars-feats.xml" />
+            <file name="starwars-feats.xml" url="https://github.com/CorrTerek/corr-homebrew-collection/raw/main/corr-homebrew-collection/starwars-feats.xml" />
         </update>
     </info>
 

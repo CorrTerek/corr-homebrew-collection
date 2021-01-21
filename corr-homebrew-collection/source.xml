@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.1">
-			<file name="source.xml" url="https://github.com/CorrTerek/mike-homebrew-collection/raw/main/source.xml" />
+			<file name="source.xml" url="https://github.com/CorrTerek/corr-homebrew-collection/raw/main/corr-homebrew-collection/source.xml" />
 		</update>
 	</info>
 	<element name="Star Wars 5e" type="Source" source="Core" id="ID_SOURCE_SW5E">
@@ -22,8 +22,8 @@
 		</description>
 		<setters>
 			<set name="abbreviation">MHBC</set>
-			<set name="url">https://drive.google.com/drive/folders/1ab95tGh-z2ebr8JtfkIto_0a7PXzRjBw</set>
-			<set name="CorrTerek" abbreviation="CT" url="https://drive.google.com/drive/folders/1ab95tGh-z2ebr8JtfkIto_0a7PXzRjBw">Unknown</set>
+			<set name="url">https://github.com/CorrTerek/corr-homebrew-collection/raw/main/corr-homebrew-collection/</set>
+			<set name="CorrTerek" abbreviation="CT" url="https://github.com/CorrTerek/corr-homebrew-collection/raw/main/corr-homebrew-collection/">Unknown</set>
 			<set name="homebrew">true</set>
 		</setters>
 	</element>

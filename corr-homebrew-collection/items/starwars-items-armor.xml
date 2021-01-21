@@ -3,7 +3,7 @@
     <info>
         <name>Star Wars Items</name>
         <update version="0.0.2">
-            <file name="starwars-items-armor.xml" url="https://github.com/CorrTerek/mike-homebrew-collection/raw/main/starwars-items-armor.xml" />
+            <file name="starwars-items-armor.xml" url="https://github.com/CorrTerek/corr-homebrew-collection/raw/main/corr-homebrew-collection/items/starwars-items-armor.xml" />
         </update>
     </info>
 
