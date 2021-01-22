@@ -3,7 +3,7 @@
 	<info>
 		<name>Corr's Homebrew Collection</name>
 		<description>A collection of homebrew for use in Corr's games.</description>
-		<update version="0.1">
+		<update version="0.1.01">
 			<file name="corr-homebrew-collection.index" url="https://github.com/CorrTerek/corr-homebrew-collection/raw/main/corr-homebrew-collection/corr-homebrew-collection.index" />
 		</update>
 	</info>
@@ -16,5 +16,6 @@
 		<file name="starwars-backgrounds.xml" url="https://github.com/CorrTerek/corr-homebrew-collection/raw/main/corr-homebrew-collection/backgrounds/starwars-backgrounds.xml" />
 		<file name="starwars-languages.xml" url="https://github.com/CorrTerek/corr-homebrew-collection/raw/main/corr-homebrew-collection/starwars-languages.xml" />
 		<file name="starwars-feats.xml" url="https://github.com/CorrTerek/corr-homebrew-collection/raw/main/corr-homebrew-collection/starwars-feats.xml" />
+		<file name="starwars-items-wondrous.xml" url="https://github.com/CorrTerek/corr-homebrew-collection/raw/main/corr-homebrew-collection/items/starwars-items-wondrous.xml" />
 	</files>
 </index>
