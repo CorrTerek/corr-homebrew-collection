@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="starwars-items-weapons.xml" url="https://github.com/CorrTerek/corr-homebrew-collection/raw/main/corr-homebrew-collection/items/starwars-items-weapons.xml" />
         </update>
     </info>
