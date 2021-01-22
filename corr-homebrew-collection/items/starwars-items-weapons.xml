@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="0.0.4">
+        <update version="0.0.41">
             <file name="starwars-items-weapons.xml" url="https://github.com/CorrTerek/corr-homebrew-collection/raw/main/corr-homebrew-collection/items/starwars-items-weapons.xml" />
         </update>
     </info>
@@ -142,7 +142,7 @@
 			<set name="proficiency">ID_SW5E_PROFICIENCY_WEAPON_MARTIAL_LIGHTSABER</set>
 		</setters>
 	</element>
-	<element name="Forceful Crystal" type="Magic Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_MAGIC_ITEM_SWORD_OF_VENGEANCE">
+	<element name="Forceful Crystal" type="Magic Item" source="Star Wars 5e" id="ID_SW5E_MAGIC_ITEM_FORCEFUL_CRYSTAL">
 		<description>
 			<p>While you are wielding a lightsaber with this crystal installed, as an action you may move yourself and up to 2 other creatures you can see up to 10 feet. If you try to move a creature that is unwilling, it may attempt a DC 14 Strength saving throw. It is not moved if it succeeds.</p>
 		</description>
@@ -153,7 +153,7 @@
 			<set name="type" addition="any lightweapon">Weapon</set>
 			<set name="attunement">false</set>
 			<set name="rarity">Uncommon</set>
-			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_LIGHTWEAPON</set>
+			<set name="weapon">ID_SW5E_WEAPON_GROUP_LIGHTWEAPON</set>
 			<set name="name-format">Forceful {{parent}}</set>
 		</setters>
 	</element>
