@@ -9,7 +9,7 @@
 
     <!-- simple -->
     <element name="Shotosaber" type="Weapon" source="Star Wars 5e" id="ID_SW5E_WEAPON_SHOTOSABER">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_FORCE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_SW5E_WEAPON_PROPERTY_HIDDEN, ID_SW5E_WEAPON_PROPERTY_LUMINOUS</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_FORCE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_SW5E_WEAPON_PROPERTY_HIDDEN, ID_SW5E_WEAPON_PROPERTY_LUMINOUS, ID_SW5E_WEAPON_GROUP_LIGHTWEAPON</supports>
 		<description>
 			<p></p>
 		</description>
@@ -23,7 +23,7 @@
 		</setters>
 	</element>
     <element name="Wristsaber" type="Weapon" source="Star Wars 5e" id="ID_SW5E_WEAPON_WRISTSABER">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_FORCE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_SW5E_WEAPON_PROPERTY_FIXED, ID_SW5E_WEAPON_PROPERTY_LUMINOUS</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_FORCE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_SW5E_WEAPON_PROPERTY_FIXED, ID_SW5E_WEAPON_PROPERTY_LUMINOUS, ID_SW5E_WEAPON_GROUP_LIGHTWEAPON</supports>
 		<description>
 			<p></p>
 		</description>
@@ -70,7 +70,7 @@
 
     <!-- martial -->
     <element name="Blaster Pistol" type="Weapon" source="Star Wars 5e" id="ID_SW5E_WEAPON_BLASTER_PISTOL">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_SW5E_WEAPON_PROPERTY_RELOAD_16</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_SW5E_WEAPON_PROPERTY_RELOAD_16, ID_SW5E_WEAPON_GROUP_BLASTER</supports>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
@@ -84,7 +84,7 @@
 		</setters>
 	</element>
     <element name="Blaster Rifle" type="Weapon" source="Star Wars 5e" id="ID_SW5E_WEAPON_BLASTER_RIFLE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_SW5E_WEAPON_PROPERTY_RELOAD_12, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_SW5E_WEAPON_PROPERTY_RELOAD_12, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_SW5E_WEAPON_GROUP_BLASTER</supports>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
@@ -112,7 +112,7 @@
 		</setters>
 	</element>
     <element name="Crossguard Saber" type="Weapon" source="Star Wars 5e" id="ID_SW5E_WEAPON_CROSSGUARD_SABER">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_FORCE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_SW5E_WEAPON_PROPERTY_DEXTERITY_13, ID_SW5E_WEAPON_PROPERTY_MIGHTY, ID_SW5E_WEAPON_PROPERTY_DEFENSIVE, ID_SW5E_WEAPON_PROPERTY_LUMINOUS</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_FORCE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_SW5E_WEAPON_PROPERTY_DEXTERITY_13, ID_SW5E_WEAPON_PROPERTY_MIGHTY, ID_SW5E_WEAPON_PROPERTY_DEFENSIVE, ID_SW5E_WEAPON_PROPERTY_LUMINOUS, ID_SW5E_WEAPON_GROUP_LIGHTWEAPON</supports>
 		<description>
 			<p></p>
 		</description>
@@ -128,7 +128,7 @@
 		</setters>
 	</element>
     <element name="Martial Lightsaber" type="Weapon" source="Star Wars 5e" id="ID_SW5E_WEAPON_MARTIAL_LIGHTSABER">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_FORCE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_SW5E_WEAPON_PROPERTY_HIDDEN, ID_SW5E_WEAPON_PROPERTY_LUMINOUS</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_FORCE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_SW5E_WEAPON_PROPERTY_HIDDEN, ID_SW5E_WEAPON_PROPERTY_LUMINOUS, ID_SW5E_WEAPON_GROUP_LIGHTWEAPON</supports>
 		<description>
 			<p></p>
 		</description>
@@ -140,6 +140,21 @@
 			<set name="damage" type="force">1d8</set>
 			<set name="versatile">1d10</set>
 			<set name="proficiency">ID_SW5E_PROFICIENCY_WEAPON_MARTIAL_LIGHTSABER</set>
+		</setters>
+	</element>
+	<element name="Forceful Crystal" type="Magic Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_MAGIC_ITEM_SWORD_OF_VENGEANCE">
+		<description>
+			<p>While you are wielding a lightsaber with this crystal installed, as an action you may move yourself and up to 2 other creatures you can see up to 10 feet. If you try to move a creature that is unwilling, it may attempt a DC 14 Strength saving throw. It is not moved if it succeeds.</p>
+		</description>
+		<setters>
+			<set name="keywords">lightweapon</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="type" addition="any lightweapon">Weapon</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_LIGHTWEAPON</set>
+			<set name="name-format">Forceful {{parent}}</set>
 		</setters>
 	</element>
 
@@ -228,9 +243,11 @@
 		</description>
 	</element>
 
-	<!-- weapon categories -->
+	<!-- weapon groups -->
 
-	<element name="Lightweapon" type="Weapon Category" source="Star Wars 5e" id="ID_SW5E_WEAPON_CATEGORY_LIGHTWEAPON">
+	<element name="Weapon Group (Lightweapons)" type="Weapon Group" source="Star Wars 5e" id="ID_SW5E_WEAPON_GROUP_LIGHTWEAPON">
 	</element>
+	<element name="Weapon Group (Blasters)" type="Weapon Group" source="Star Wars 5e" id="ID_SW5E_WEAPON_GROUP_BLASTER">
+	</element>	
         
 </elements>
