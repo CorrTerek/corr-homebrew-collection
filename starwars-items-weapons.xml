@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.4">
+            <file name="starwars-items-weapons.xml" url="https://github.com/CorrTerek/corr-homebrew-collection/raw/main/corr-homebrew-collection/items/starwars-items-weapons.xml" />
+        </update>
+    </info>
+
+    <!-- simple -->
+    <element name="Shotosaber" type="Weapon" source="Star Wars 5e" id="ID_SW5E_WEAPON_SHOTOSABER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_FORCE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_SW5E_WEAPON_PROPERTY_HIDDEN, ID_SW5E_WEAPON_PROPERTY_LUMINOUS, ID_SW5E_WEAPON_GROUP_LIGHTWEAPON</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="force">1d6</set>
+			<set name="proficiency">ID_SW5E_PROFICIENCY_WEAPON_SHOTOSABER</set>
+		</setters>
+	</element>
+    <element name="Wristsaber" type="Weapon" source="Star Wars 5e" id="ID_SW5E_WEAPON_WRISTSABER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_FORCE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_SW5E_WEAPON_PROPERTY_FIXED, ID_SW5E_WEAPON_PROPERTY_LUMINOUS, ID_SW5E_WEAPON_GROUP_LIGHTWEAPON</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="force">1d4</set>
+			<set name="proficiency">ID_SW5E_PROFICIENCY_WEAPON_WRISTSABER</set>
+		</setters>
+	</element>
+    <element name="Vibrodagger" type="Weapon" source="Star Wars 5e" id="ID_SW5E_WEAPON_VIBRODAGGER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">20/60</set>
+			<set name="damage" type="piercing">1d4</set>
+			<set name="proficiency">ID_SW5E_PROFICIENCY_WEAPON_VIBRODAGGER</set>
+		</setters>
+	</element>
+    <element name="Vibrospear" type="Weapon" source="Star Wars 5e" id="ID_SW5E_WEAPON_VIBROSPEAR">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SPEARS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">12</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">20/60</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="versatile">1d8</set>
+			<set name="proficiency">ID_SW5E_PROFICIENCY_WEAPON_VIBROSPEAR</set>
+		</setters>
+	</element>
+
+    <!-- martial -->
+    <element name="Blaster Pistol" type="Weapon" source="Star Wars 5e" id="ID_SW5E_WEAPON_BLASTER_PISTOL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_SW5E_WEAPON_PROPERTY_RELOAD_16, ID_SW5E_WEAPON_GROUP_BLASTER</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">20</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">40/160</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="proficiency">ID_SW5E_PROFICIENCY_WEAPON_BLASTER_PISTOL</set>
+			<!-- <set name="reload">16</set> -->
+		</setters>
+	</element>
+    <element name="Blaster Rifle" type="Weapon" source="Star Wars 5e" id="ID_SW5E_WEAPON_BLASTER_RIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_SW5E_WEAPON_PROPERTY_RELOAD_12, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_SW5E_WEAPON_GROUP_BLASTER</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="weight" lb="11">11 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/400</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_SW5E_PROFICIENCY_WEAPON_BLASTER_RIFLE</set>
+			<!-- <set name="reload">12</set> -->
+		</setters>
+	</element>
+    <element name="Wristblade" type="Weapon" source="Star Wars 5e" id="ID_SW5E_WEAPON_WRISTBLADE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_SW5E_WEAPON_PROPERTY_FIXED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="proficiency">ID_SW5E_PROFICIENCY_WEAPON_WRISTBLADE</set>
+		</setters>
+	</element>
+    <element name="Crossguard Saber" type="Weapon" source="Star Wars 5e" id="ID_SW5E_WEAPON_CROSSGUARD_SABER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_FORCE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_SW5E_WEAPON_PROPERTY_DEXTERITY_13, ID_SW5E_WEAPON_PROPERTY_MIGHTY, ID_SW5E_WEAPON_PROPERTY_DEFENSIVE, ID_SW5E_WEAPON_PROPERTY_LUMINOUS, ID_SW5E_WEAPON_GROUP_LIGHTWEAPON</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">95</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="force">1d8</set>
+			<set name="versatile">1d10</set>
+			<set name="proficiency">ID_SW5E_PROFICIENCY_WEAPON_CROSSGUARD_SABER</set>
+            <!-- <set name="dexterity">13</set> -->
+		</setters>
+	</element>
+    <element name="Martial Lightsaber" type="Weapon" source="Star Wars 5e" id="ID_SW5E_WEAPON_MARTIAL_LIGHTSABER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_FORCE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_SW5E_WEAPON_PROPERTY_HIDDEN, ID_SW5E_WEAPON_PROPERTY_LUMINOUS, ID_SW5E_WEAPON_GROUP_LIGHTWEAPON</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="force">1d8</set>
+			<set name="versatile">1d10</set>
+			<set name="proficiency">ID_SW5E_PROFICIENCY_WEAPON_MARTIAL_LIGHTSABER</set>
+		</setters>
+	</element>
+	<element name="Forceful Crystal" type="Magic Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_MAGIC_ITEM_SWORD_OF_VENGEANCE">
+		<description>
+			<p>While you are wielding a lightsaber with this crystal installed, as an action you may move yourself and up to 2 other creatures you can see up to 10 feet. If you try to move a creature that is unwilling, it may attempt a DC 14 Strength saving throw. It is not moved if it succeeds.</p>
+		</description>
+		<setters>
+			<set name="keywords">lightweapon</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="type" addition="any lightweapon">Weapon</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_LIGHTWEAPON</set>
+			<set name="name-format">Forceful {{parent}}</set>
+		</setters>
+	</element>
+
+
+    <!-- proficiencies -->
+    <element name="Weapon Proficiency (Shotosaber)" type="Proficiency" source="Star Wars 5e" id="ID_SW5E_PROFICIENCY_WEAPON_SHOTOSABER">
+	<supports>Weapon, Lightweapon</supports>
+	</element>
+	<element name="Weapon Proficiency (Wristsaber)" type="Proficiency" source="Star Wars 5e" id="ID_SW5E_PROFICIENCY_WEAPON_WRISTSABER">
+	<supports>Weapon, Lightweapon</supports>
+	</element>
+	<element name="Weapon Proficiency (Vibrodagger)" type="Proficiency" source="Star Wars 5e" id="ID_SW5E_PROFICIENCY_WEAPON_VIBRODAGGER">
+	<supports>Weapon</supports>	
+	</element>
+	<element name="Weapon Proficiency (Vibrospear)" type="Proficiency" source="Star Wars 5e" id="ID_SW5E_PROFICIENCY_WEAPON_VIBROSPEAR">
+	<supports>Weapon</supports>	
+	</element>
+	<element name="Weapon Proficiency (Blaster Pistol)" type="Proficiency" source="Star Wars 5e" id="ID_SW5E_PROFICIENCY_WEAPON_BLASTER_PISTOL">
+	<supports>Weapon, Blaster</supports>
+	</element>
+	<element name="Weapon Proficiency (Blaster Rifle)" type="Proficiency" source="Star Wars 5e" id="ID_SW5E_PROFICIENCY_WEAPON_BLASTER_RIFLE">
+	<supports>Weapon, Blaster</supports>	
+	</element>
+    <element name="Weapon Proficiency (Wristblade)" type="Proficiency" source="Star Wars 5e" id="ID_SW5E_PROFICIENCY_WEAPON_WRISTBLADE">
+	<supports>Weapon</supports>	
+	</element>
+    <element name="Weapon Proficiency (Crossguard Saber)" type="Proficiency" source="Star Wars 5e" id="ID_SW5E_PROFICIENCY_WEAPON_CROSSGUARD_SABER">
+	<supports>Weapon, Lightweapon</supports>
+	</element>
+    <element name="Weapon Proficiency (Martial Lightsaber)" type="Proficiency" source="Star Wars 5e" id="ID_SW5E_PROFICIENCY_WEAPON_MARTIAL_LIGHTSABER">
+	<supports>Weapon, Lightweapon</supports>
+	</element>
+
+    <!-- weapon properties -->
+    <element name="Hidden" type="Weapon Property" source="Star Wars 5e" id="ID_SW5E_WEAPON_PROPERTY_HIDDEN">
+		<description>
+			<p>You have advantage on Dexterity (Sleight of Hand) checks made to conceal a hidden weapon.</p>
+		</description>
+	</element>
+    <element name="Luminous" type="Weapon Property" source="Star Wars 5e" id="ID_SW5E_WEAPON_PROPERTY_LUMINOUS">
+		<description>
+			<p>A weapon with the luminous property sheds dim light in a 5-foot radius while activated. Additionally, Dexterity (Stealth) checks made while the weapon is activated have disadvantage.</p>
+		</description>
+	</element>
+    <element name="Reload" type="Weapon Property" source="Star Wars 5e" id="ID_SW5E_WEAPON_PROPERTY_RELOAD">
+		<description>
+			<p>A limited number of shots can be made with a weapon that has the reload property. A character must then reload it using an action or a bonus action (the character's choice).</p>
+		</description>
+	</element>
+    <element name="Fixed" type="Weapon Property" source="Star Wars 5e" id="ID_SW5E_WEAPON_PROPERTY_FIXED">
+		<description>
+			<p>A weapon with the fixed property does not fill the hand slot, but you can’t use the weapon while the hand is full. Additionally, you have a +10 bonus to ability checks and saving throws to avoid being disarmed of this weapon.</p>
+		</description>
+	</element>
+    <element name="Defensive" type="Weapon Property" source="Star Wars 5e" id="ID_SW5E_WEAPON_PROPERTY_DEFENSIVE">
+		<description>
+			<p>When you make your first attack on your turn with a weapon with the defensive property, you can choose to suffer a penalty to attack and damage rolls with that weapon up to the defensive number. If you do so, you gain the same bonus to AC. These effects last until the start of your next turn, as long as you’re holding the weapon.</p>
+		</description>
+	</element>
+    <element name="Dexterity" type="Weapon Property" source="Star Wars 5e" id="ID_SW5E_WEAPON_PROPERTY_DEXTERITY">
+		<description>
+			<p>A weapon with this special property requires more skill to control. While wielding it, you have disadvantage on attack rolls unless you meet the Dexterity requirement.</p>
+		</description>
+	</element>
+    <element name="Mighty" type="Weapon Property" source="Star Wars 5e" id="ID_SW5E_WEAPON_PROPERTY_MIGHTY">
+		<description>
+			<p>When you hit with an attack roll using Strength with this weapon, you deal additional damage equal to half your Strength modifier (rounded up, minimum of +1).</p>
+		</description>
+	</element>
+    <element name="Reload 16" type="Weapon Property" source="Star Wars 5e" id="ID_SW5E_WEAPON_PROPERTY_RELOAD_16">
+		<description>
+			<p>This weapon needs to be reloaded after 16 shots.</p>
+			<div element="ID_SW5E_WEAPON_PROPERTY_RELOAD" />
+		</description>
+	</element>
+	<element name="Reload 12" type="Weapon Property" source="Star Wars 5e" id="ID_SW5E_WEAPON_PROPERTY_RELOAD_12">
+		<description>
+			<p>This weapon needs to be reloaded after 12 shots.</p>
+			<div element="ID_SW5E_WEAPON_PROPERTY_RELOAD" />
+		</description>
+	</element>
+    <element name="Dexterity 13" type="Weapon Property" source="Star Wars 5e" id="ID_SW5E_WEAPON_PROPERTY_DEXTERITY_13">
+		<description>
+			<p>This weapon has a Dexterity requirement of 13.</p>
+			<div element="ID_SW5E_WEAPON_PROPERTY_DEXTERITY" />
+		</description>
+	</element>
+
+	<!-- weapon groups -->
+
+	<element name="Weapon Group (Lightweapons)" type="Weapon Group" source="Star Wars 5e" id="ID_SW5E_WEAPON_GROUP_LIGHTWEAPON">
+	</element>
+	<element name="Weapon Group (Blasters)" type="Weapon Group" source="Star Wars 5e" id="ID_SW5E_WEAPON_GROUP_BLASTER">
+	</element>	
+        
+</elements>
