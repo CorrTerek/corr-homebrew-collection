@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="0.0.111">
-			<file name="starwars-items-wondrous.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/dungeon-masters-guide/items/items-wondrous.xml" />
+		<update version="0.0.112">
+			<file name="starwars-items-wondrous.xml" url="https://github.com/CorrTerek/corr-homebrew-collection/raw/main/corr-homebrew-collection/items/starwars-items-wondrous.xml" />
 		</update>
 	</info>
     
