@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="0.0.2">
+        <update version="0.0.21">
             <file name="starwars-languages.xml" url="https://github.com/CorrTerek/corr-homebrew-collection/raw/main/corr-homebrew-collection/starwars-languages.xml" />
         </update>
     </info>
@@ -60,6 +60,72 @@
 			<set name="exotic">true</set>
 			<set name="speakers">Mandalorians</set>
 			<set name="script">Mando'a</set>
+		</setters>
+	</element>
+	<element name="Binary" type="Language" source="Star Wars 5e" id="ID_LANGUAGE_BINARY">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by droids.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Droids</set>
+			<set name="script">Binary</set>
+		</setters>
+	</element>
+	<element name="Bocce" type="Language" source="Star Wars 5e" id="ID_LANGUAGE_BOCCE">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by spacers, comprised of elements from several languages.</p>
+		</description>
+		<setters>
+			<set name="exotic">standard</set>
+			<set name="speakers">Spacers</set>
+			<set name="script">Aurabesh</set>
+		</setters>
+	</element>
+	<element name="Bothese" type="Language" source="Star Wars 5e" id="ID_LANGUAGE_BOTHESE">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by Bothans.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Bothans</set>
+			<set name="script">Bothan</set>
+		</setters>
+	</element>
+	<element name="Cheunh" type="Language" source="Star Wars 5e" id="ID_LANGUAGE_CHEUNH">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by Chiss.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Chiss</set>
+			<set name="script">Cheunh</set>
+		</setters>
+	</element>
+	<element name="Ryl" type="Language" source="Star Wars 5e" id="ID_LANGUAGE_RYL">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by Twi'leks.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Twi'leks</set>
+			<set name="script">Ryl</set>
+		</setters>
+	</element>
+	<element name="Shyriiwook" type="Language" source="Star Wars 5e" id="ID_LANGUAGE_SHYRIIWOOK">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by Wookiees.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Wookies</set>
+			<set name="script">Shyriiwook</set>
 		</setters>
 	</element>
 </elements>
