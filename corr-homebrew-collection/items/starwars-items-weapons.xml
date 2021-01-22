@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="starwars-items-weapons.xml" url="https://github.com/CorrTerek/corr-homebrew-collection/raw/main/corr-homebrew-collection/items/starwars-items-weapons.xml" />
         </update>
     </info>
@@ -226,6 +226,11 @@
 			<p>This weapon has a Dexterity requirement of 13.</p>
 			<div element="ID_SW5E_WEAPON_PROPERTY_DEXTERITY" />
 		</description>
+	</element>
+
+	<!-- weapon categories -->
+
+	<element name="Lightweapon" type="Weapon Category" source="Star Wars 5e" id="ID_SW5E_WEAPON_CATEGORY_LIGHTWEAPON">
 	</element>
         
 </elements>
