@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name></name>
-        <update version="0.0.21">
+        <name>Star Wars Languages</name>
+        <update version="0.0.22">
             <file name="starwars-languages.xml" url="https://github.com/CorrTerek/corr-homebrew-collection/raw/main/corr-homebrew-collection/starwars-languages.xml" />
         </update>
     </info>
