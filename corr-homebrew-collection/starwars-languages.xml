@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Star Wars Languages</name>
-        <update version="0.0.22">
+        <update version="0.0.23">
             <file name="starwars-languages.xml" url="https://github.com/CorrTerek/corr-homebrew-collection/raw/main/corr-homebrew-collection/starwars-languages.xml" />
         </update>
     </info>
@@ -79,7 +79,7 @@
 			<p>Typically spoken by spacers, comprised of elements from several languages.</p>
 		</description>
 		<setters>
-			<set name="exotic">standard</set>
+			<set name="exotic">true</set>
 			<set name="speakers">Spacers</set>
 			<set name="script">Aurabesh</set>
 		</setters>
